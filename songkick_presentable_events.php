@@ -104,7 +104,7 @@ class SongkickPresentableEvents {
                 $str .= '</div>';
             }
         } else {
-            $str .= '<p class="profile-title"><a href="'.$this->songkick_events->profile_url().'">';
+            $str .= '<p class="profile-title"><a href="'.$this->songkick_events->profile_url().'" target="_blank">';
             $str .= htmlentities($profile_title, ENT_QUOTES, SONGKICK_I18N_ENCODING)."</a></p>";
         }
         $str .= $this->powered_by_songkick($this->logo);
@@ -132,7 +132,7 @@ class SongkickPresentableEvents {
 
     private function powered_by_songkick($logo) {
         $text = __('Concerts by Songkick', SONGKICK_TEXT_DOMAIN);
-        $html  = "<a class='powered-by' href='http://www.songkick.com/'>";
+        $html  = "<a class='powered-by' href='http://www.songkick.com/' target='_blank'>";
         $html .= "<img src='".site_url('/wp-content/plugins/songkick-concerts-and-festivals/'.$logo)."' title='".htmlentities($text, ENT_QUOTES, SONGKICK_I18N_ENCODING)."' alt='".htmlentities($text, ENT_QUOTES, SONGKICK_I18N_ENCODING)."' /></a>";
         return $html;
     }
