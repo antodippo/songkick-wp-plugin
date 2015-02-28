@@ -113,7 +113,7 @@ class SongkickPresentableEvent {
             $css['day']            = 'display:block;font-size:1.8em;margin: 0px;margin-top: 2px;padding: 0px;';
             $css['month']          = 'font-size:1.4em;margin: 0px;margin-bottom: 2px;padding: 0px;';
             $css['day-month']      = 'border: 1px solid '.$this->border_color.';display:block;padding-bottom:4px;padding-top:3px;line-height:1.1em;';
-            $css['date-wrapper']   = 'font-size:7px;font-weight:bold;margin-right:10px;color:'.$this->border_color.';float:left;text-align:center;width:34px;margin-left:0px;line-height:1.1em;';
+            $css['date-wrapper']   = 'font-size:7px;font-weight:bold;margin-right:10px;color:'.$this->border_color.';float:left;text-align:center;width:34px;margin-left:-20px;line-height:1.1em;';
             $css['a-date-wrapper'] = 'text-decoration: none;color:'.$this->border_color;
             $css['day-name']       = 'background-color: #303030;color:#FFFFFF;display:block;font-size:7px;line-height:10px;padding-bottom:1px;padding-top:2px;text-shadow:1px 1px rgba(0, 0, 0, 0.6);text-transform:uppercase;';
         }
@@ -148,4 +148,3 @@ class SongkickPresentableEvent {
     }
 
 }
-?>
