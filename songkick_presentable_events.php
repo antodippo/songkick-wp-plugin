@@ -107,7 +107,9 @@ class SongkickPresentableEvents {
             $str .= '<p class="profile-title"><a href="'.$this->songkick_events->profile_url().'" target="_blank">';
             $str .= htmlentities($profile_title, ENT_QUOTES, SONGKICK_I18N_ENCODING)."</a></p>";
         }
-        $str .= $this->powered_by_songkick($this->logo);
+        if(!is_null($this->logo)) {
+            $str .= $this->powered_by_songkick($this->logo);
+        }
         return $str;
     }
 
