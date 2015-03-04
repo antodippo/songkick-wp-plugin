@@ -22,7 +22,7 @@ msgstr "Concerti"
 
 #: songkick_concerts_and_festivals.php:152
 msgid "See all concerts"
-msgstr "Vedi tutti i concerti"
+msgstr "Vedi tutti"
 
 #: songkick_concerts_and_festivals.php:172
 msgid "No upcoming concerts or festivals."
